@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Checking (Websites)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            padding-left: 20px; /* Added left padding */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="button"] {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Weather Checking (Websites)</h1>
+    <p>Check the weather of your favorite websites</p>
+
+    <p>Search website for its weather. EXAMPLE (google.com):</p>
+    <input type="text" id="dropdownID">
+    <input type="button" onclick="location.href='http://127.0.0.1:5000/weather/'+document.getElementById('dropdownID').value" value="Get Weather" />
+    <br><br>
+
+    <a href="about.html">About Us</a>
+    <br><br>
+
+    <a href="ftp.html">FTP Manual</a>
+    <br><br>
+    <!-- 
+    <a href="login.html">Newsletter Sign up</a>
+    <br><br> -->
+
+    <a href="http://127.0.0.1:5000/joke/">Jokes</a>
+
+</body>
+
+</html>
