@@ -1,0 +1,374 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    background-image: url('raining.gif');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.header {
+    background-color: #411d41;
+    color: white;
+    padding: 28px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    background-image: url('lightning.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto 148px; 
+}
+
+.header .nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.weather-box,
+.joke-box {
+    background: white;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+.weather-content h1,
+.joke-content h1 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+p {
+    color: #411d41;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #411d41;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #411d41;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #411d41;
+    color: white;
+    margin-top: auto;
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .button-container {
+        position: static; /* Reset position to allow natural flow */
+        text-align: right; /* Align buttons to the right within their container */
+        margin-top: 20px; /* Add some top margin for spacing */
+    }
+    
+    .button-container input[type="button"] {
+        display: block; /* Make buttons occupy full width */
+        margin-top: 10px; /* Add some top margin for spacing */
+    }
+}
+
+/* login page */
+.login-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 36px; /* Set the font size to 36px */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #13181e;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #02080f;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box {
+    background: white;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #411d41;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #411d41;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #926892;
+    color: white;
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* ftp page */
+.manual-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.manual-title {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.manual-description {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.manual-section-title {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.manual-section-content {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.manual-list {
+    margin-left: 20px;
+    color: #555;
+}
+
+.manual-toc {
+    margin-left: 20px;
+    color: #555;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #411d41;
+    color: white;
+    margin: 0;
+}
+
+
+/* about us page */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+}
+
+.about h1 {
+    color: #333;
+    font-size: 36px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 30px; /* Increased margin bottom */
+    text-align: left;
+}
+
+.about p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+.about ul li strong {
+    font-weight: bold;
+}
+
+.about-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.about-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.about-table td:first-child {
+    text-align: left; 
+}
