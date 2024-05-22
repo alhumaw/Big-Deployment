@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTP Manual</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+   <header class="header">
+    <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo" class="logo">
+        Weather and Jokes
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">Contact</a>
+    <a href="{{ url_for('ftp') }}">FTP Manual</a>
+    <a href="{{ url_for('login') }}">Login</a>
+        </div>
+    </header>
+
+    <div class="manual-container">
+        <h1 class="manual-title">FTP Manual</h1>
+        <p class="manual-description">This manual is for internal use only.</p>
+        <p class="manual-description">If you want to perform file transfers, use your credentials provided by the admin. If you forget your credentials, contact the admin using the contact information provided on the About Us page.</p>
+        
+        <h2 class="manual-section-title">Table of Contents</h2>
+        <ol class="manual-toc">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#setup">Setting Up FTP</a></li>
+            <li><a href="#connect">Connecting to the FTP Server</a></li>
+            <li><a href="#upload">Uploading Files</a></li>
+            <li><a href="#download">Downloading Files</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+        </ol>
+
+        <h2 id="introduction" class="manual-section-title">Introduction</h2>
+        <p class="manual-section-content">FTP (File Transfer Protocol) is a standard network protocol used for the transfer of computer files between a client and server on a computer network.</p>
+
+        <h2 id="setup" class="manual-section-title">Setting Up FTP</h2>
+        <p class="manual-section-content">To set up an FTP client, you will need to download and install an FTP client software. We recommend using FileZilla, which is available for Windows, Mac, and Linux.</p>
+        <ul class="manual-list">
+            <li>Download FileZilla from <a href="https://filezilla-project.org/">the official website</a>.</li>
+            <li>Install the software by following the on-screen instructions.</li>
+        </ul>
+
+        <h2 id="connect" class="manual-section-title">Connecting to the FTP Server</h2>
+        <p class="manual-section-content">Once you have installed the FTP client, follow these steps to connect to the FTP server:</p>
+        <ul class="manual-list">
+            <li>Open the FTP client.</li>
+            <li>Enter the server address, username, and password provided by the admin.</li>
+            <li>Click "Quickconnect" or the equivalent button to connect.</li>
+        </ul>
+
+        <h2 id="upload" class="manual-section-title">Uploading Files</h2>
+        <p class="manual-section-content">To upload files to the FTP server:</p>
+        <ul class="manual-list">
+            <li>Navigate to the directory on your local machine where the files are stored.</li>
+            <li>Drag and drop the files into the desired directory on the server.</li>
+        </ul>
+
+        <h2 id="download" class="manual-section-title">Downloading Files</h2>
+        <p class="manual-section-content">To download files from the FTP server:</p>
+        <ul class="manual-list">
+            <li>Navigate to the directory on the server where the files are stored.</li>
+            <li>Drag and drop the files into the desired directory on your local machine.</li>
+        </ul>
+
+        <h2 id="troubleshooting" class="manual-section-title">Troubleshooting</h2>
+        <p class="manual-section-content">If you encounter issues while using FTP, try the following troubleshooting steps:</p>
+        <ul class="manual-list">
+            <li>Ensure you have entered the correct server address, username, and password.</li>
+            <li>Check your internet connection.</li>
+            <li>Ensure that your firewall or antivirus software is not blocking the FTP connection.</li>
+            <li>Contact the admin for further assistance if the issue persists.</li>
+        </ul>
+    </div>
+    <style>
+        body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 0;
+      /*background-image: url('.gif');*/
+      background-size: 100% 100%; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+      </style>
+</body>
+</html>

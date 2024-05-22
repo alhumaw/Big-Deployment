@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+</head>
+<body>
+    <header class="header"> 
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo" class="logo">
+        Weather and Jokes
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">Contact</a>
+            <a href="{{ url_for('ftp') }}">FTP Manual</a>
+            <a href="{{ url_for('login') }}">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="" method="get">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            background-image: url('../static/raining.gif');
+            background-size: 100% 100%; 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <script>
+        function reloadPage() {
+            location.reload();
+            return false; 
+        }
+    </script>
+</body>
+</html>

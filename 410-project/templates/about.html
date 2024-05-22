@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header class="header">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo" class="logo">
+        Weather and Jokes
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">Contact</a>
+            <a href="{{ url_for('ftp') }}">FTP Manual</a>
+            <a href="{{ url_for('login') }}">Login</a>
+        </div>
+    </header>
+
+    <div class="about">
+        <h1>About Us</h1>
+        <p>Welcome to Weather and Jokes!</p>
+        <p>We are a team of passionate individuals dedicated to providing you with the best weather updates and the funniest jokes.</p>
+        <h2>Our Mission</h2>
+        <p>Our mission is to make your day brighter by delivering accurate weather forecasts and bringing smiles to your faces with our hilarious jokes.</p>
+        <h2>Our Team</h2>
+        <ul>
+            <li><strong>Alex</strong> - Founder and CEO</li>
+            <li><strong>Dillon</strong> - Weather Analyst</li>
+            <li><strong>Andre</strong> - Joke Specialist</li>
+            <li><strong>Cameron</strong> - Security</li>
+            <li><strong>Beighlor</strong> - Design</li>
+            <li><strong>Chelsea</strong> - Documentation</li>
+            <li><strong>Brendan</strong> - Monitoring</li>
+
+        </ul>
+        <h2>Contact Us</h2>
+        <table class="about-table">
+            <tr>
+                <td>Email: contact@weatherandjokes.com</td>
+            </tr>
+            <tr>
+                <td>Phone: (605)-313-4000</td>
+            </tr>
+            <tr>
+                <td>Address: 601 E Riverside Ave, Spokane,WA USA</td>
+            </tr>
+        </table>
+    </div>
+    <style>
+        body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 0;
+      /*background-image: url('.gif');*/
+      background-size: 100% 100%; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+      </style>
+</body>
+
+</html>
