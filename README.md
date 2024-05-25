@@ -5,8 +5,10 @@ This is an Academic project that involved creating a "Big Deployment" alongside 
 ## Official Description
 
 The ultimate challenge of any deployment life cycle is tying all ideas into a single, nicely wrapped package. This is the goal of orchestration.
-To implement, or \textit{orchestrate} a deployment such as this, we designed a multi-tiered architectural diagram (Figure~\ref{fig:architecture})
+To implement, or \textit{orchestrate} a deployment such as this, we designed a multi-tiered architectural diagram 
 that outlines how every building block in our environment fits together to form a finalized representation of a working project. 
+
+![alert](diagram.png)
 
 To host our content, we utilized Kubernetes. This method first involved integrating a docker image that was specifically designed to host content created by our frontend developers.
 We then created service and deployment YAML files to control multiple containers behind a load balancer. 
