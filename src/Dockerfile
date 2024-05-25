@@ -7,9 +7,8 @@ RUN apt -y install python3-requests
 RUN apt -y install curl
 RUN apt -y install whois
 COPY flask_example.py ./
-COPY index.html ./
-COPY about.html ./
-COPY ftp.html ./
+COPY static/ ./static/
+COPY templates ./templates/ 
 EXPOSE 5000
 CMD ["python3", "flask_example.py"]
 

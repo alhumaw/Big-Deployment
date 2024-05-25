@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache-deployment
+  name: flask-deployment
   labels:
     app: demo
 spec:
@@ -15,9 +15,9 @@ spec:
         app: demo
     spec:
       containers:
-      - name: apache-container
-        image: localhost:32000/apache-1:k8s
+      - name: flask-container
+        image: localhost:32000/flask:k8s
         imagePullPolicy: Always
         ports:
-        - containerPort: 80  # Updated to new port
+        - containerPort: 5000  # Updated to new port
 

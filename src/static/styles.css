@@ -10,13 +10,14 @@ body {
 
 /*logo */
 .logo {
-    width: 143px; 
-    height: auto;
+    width: 138px; 
+    height: 138px;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
+/*header and navbar*/
 .header {
     background-color: #411d41;
     color: white;
@@ -39,6 +40,7 @@ body {
     text-decoration: underline;
 }
 
+/*index*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -123,14 +125,14 @@ input[type="button"]:hover {
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
     .button-container {
-        position: static; /* Reset position to allow natural flow */
-        text-align: right; /* Align buttons to the right within their container */
-        margin-top: 20px; /* Add some top margin for spacing */
+        position: static; 
+        text-align: right;
+        margin-top: 20px; 
     }
     
     .button-container input[type="button"] {
-        display: block; /* Make buttons occupy full width */
-        margin-top: 10px; /* Add some top margin for spacing */
+        display: block; 
+        margin-top: 10px; 
     }
 }
 
@@ -147,12 +149,12 @@ input[type="button"]:hover {
 
 .login-container h2 {
     margin-bottom: 20px;
-    font-size: 36px; /* Set the font size to 36px */
+    font-size: 36px; 
 }
 
 .form-group {
     margin-bottom: 20px;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 .form-group label {
@@ -161,11 +163,11 @@ input[type="button"]:hover {
 }
 
 .form-group input {
-    width: 100%;
+    width: calc(100% - 22px); 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .form-group input[type="submit"] {
@@ -173,15 +175,16 @@ input[type="button"]:hover {
     color: #fff;
     cursor: pointer;
     border: none;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .form-group input[type="submit"]:hover {
     background-color: #411d41;
 }
+
 
 .content {
     display: flex;
@@ -325,7 +328,7 @@ h2 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 .about h1 {
@@ -338,7 +341,7 @@ h2 {
 .about h2 {
     color: #333;
     margin-top: 20px;
-    margin-bottom: 30px; /* Increased margin bottom */
+    margin-bottom: 30px; 
     text-align: left;
 }
 
