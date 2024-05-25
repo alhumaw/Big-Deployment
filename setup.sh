@@ -1,19 +1,17 @@
 sudo apt update -y
 sudo apt install docker.io -y
 sudo usermod -a -G docker $USER
-newgrp docker
 sudo snap install microk8s --classic
 sudo snap install kubectl --classic
 sudo apt install git -y
-sudo usermod -a -G mirok8s $USER
-newgrp microk8s
-microk8s.enable registry
+sudo usermod -a -G microk8s $USER
+sudo microk8s.enable registry
 git clone https://github.com/alhumaw/Big-Deployment
 cd Big-Deployment/src
-docker build -t localhost:32000/flask:k8s
-docker push localhost:32000/flask:k8s
+sudo docker build -t localhost:32000/flask:k8s .
+sudo docker push localhost:32000/flask:k8s
 cd ~/Big-Deployment/kube/demo
-microk8s.kubectl apply -f .
+sudo microk8s.kubectl apply -f .
 
 sudo apt install nginx -y
 sudo cp ~/Big-Deployment/proxy.conf /etc/nginx/conf.d/
