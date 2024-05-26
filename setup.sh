@@ -34,7 +34,7 @@ sudo ./configure --add-dynamic-module=../ModSecurity-nginx  --with-cc-opt='-g -O
 sudo make modules
 sudo mkdir /etc/nginx/modules
 sudo cp objs/ngx_http_modsecurity_module.so /etc/nginx/modules
-sudo sh -c 'echo "load_module /etc/nginx/modules/ngx_http_modsecurity_module.so;" >> /etc/nginx/nginx.conf'
+sudo sed -i '/include \/etc\/nginx\/modules-enabled\/\*.conf;/a load_module /etc/nginx/modules/ngx_http_modsecurity_module.so;' /etc/nginx/nginx.conf
 sudo rm -rf /usr/share/modsecurity-crs
 sudo git clone https://github.com/coreruleset/coreruleset /usr/local/modsecurity-crs
 sudo mv /usr/local/modsecurity-crs/crs-setup.conf.example /usr/local/modsecurity-crs/crs-setup.conf
