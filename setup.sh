@@ -45,6 +45,10 @@ sudo cp /opt/ModSecurity/modsecurity.conf-recommended /etc/nginx/modsec/modsecur
 sudo sed -i 's/^SecRuleEngine DetectionOnly/SecRuleEngine On/' /etc/nginx/modsec/modsecurity.conf
 sudo touch /etc/nginx/modsec/main.conf
 sudo sh -c 'echo "Include /etc/nginx/modsec/modsecurity.conf\nInclude /usr/local/modsecurity-crs/crs-setup.conf\nInclude /usr/local/modsecurity-crs/rules/*.conf" > /etc/nginx/modsec/main.conf'
-sudo mv /usr/local/modsecurity-crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf ~/sudo rm /etc/nginx/sites-enabled/default 
+
+sudo mv /usr/local/modsecurity-crs/rules/REQUEST-949-BLOCKING-EVALUATION.conf ~/
+
+sudo rm /etc/nginx/sites-enabled/default 
+
 sudo systemctl restart nginx
 
