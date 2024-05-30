@@ -12,7 +12,7 @@ cumulative_ip_list="/var/log/honeypot/ip_list_all.txt"
 if [[ -f "$cumulative_ip_list" ]]; then
     # Read each IP address from the list and add DROP rule to iptables
     while IFS= read -r ip_address; do
-        sudo iptables -A INPUT -s "$ip_address" -j DROP
+        sudo iptables -I INPUT -s "$ip_address" -j DROP
         if [ $? -eq 0 ]; then
             echo "$(date +"%Y-%m-%d %T") Blocked IP: $ip_address" >> "$log_file"
         else
